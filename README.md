@@ -2,7 +2,7 @@
 <img src="http://think-about.fr/wp-content/uploads/2015/07/html5-superheros.png" width="100"><br/>
 <h1 align="center">html5ify</h1>
 </p>
-HTML5 validator and migration helper which adds `data`-prefix to all custom attributes in html documents and verifies that no obsolete/unsupported attributes is used.
+HTML5 validator and migration helper which adds `data`-prefix to all custom attributes in html documents and verifies that no obsolete/unsupported attributes is used. Attribute list is based on [W3 attribute reference]("http://www.w3schools.com/tags/ref_attributes.asp")
 
 ## Installation
 ```
