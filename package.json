@@ -1,6 +1,6 @@
 {
   "name": "html5ify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "HTML 5 migration helper. Adds data prefix to all custom attributes.",
   "main": "html5ify/html5ify.js",
   "bin": {
@@ -26,6 +26,7 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
     "commander": "^2.9.0",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",

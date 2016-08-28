@@ -27,6 +27,7 @@ Options:
 ### Options
 `throw` set this to `true` if you want gulp to throw an exception if unsupported/obsolete HTML attributes was found in any document.
 ### Example
+#### gulpfile.js
 ```javascript
 var html5ify = require("html5ify");
 var gulp = require("gulp");
@@ -38,6 +39,39 @@ gulp.task("html5ify", function() {
     }))
     .pipe(gulp.dest("./comp"));
 });
+```
+#### Input
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Some title</title>
+</head>
+  <body>
+    <div id="foo" ng-app="myApp" ng-controller="myCtrl">
+      <input type="text" ng-model="firstName" />
+      <input type="text" ng-model="lastName" />
+    </div>
+  </body>
+</html>
+```
+#### Output
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Some title</title>
+</head>
+  <body>
+    <div id="foo" data-ng-app="myApp" data-ng-controller="myCtrl">
+      <input type="text" data-ng-model="firstName">
+      <input type="text" data-ng-model="lastName">
+    </div>
+  </body>
+</html>
+
 ```
 ## License
 The MIT License (MIT)
