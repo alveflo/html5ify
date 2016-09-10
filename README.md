@@ -4,6 +4,7 @@
 </p>
 <p align="center">
 <a href="https://www.npmjs.com/package/html5ify"><img src="https://badge.fury.io/js/html5ify.svg"/></a>
+<a href="https://codeclimate.com/github/alveflo/html5ify"><img src="https://codeclimate.com/github/alveflo/html5ify/badges/gpa.svg" /></a>
 <a href="https://www.npmjs.com/package/html5ify"><img src="https://img.shields.io/npm/l/express.svg?maxAge=2592000"/></a>
 </p>
 HTML5 validator and migration helper which adds `data`-prefix to all custom attributes in html documents and verifies that no obsolete/unsupported attributes is used. Attribute list is based on [W3 attribute reference](http://www.w3schools.com/tags/ref_attributes.asp)
