@@ -8,7 +8,7 @@
 <a href="http://packagequality.com/#?package=html5ify"><img src="http://npm.packagequality.com/shield/html5ify.svg"/></a>
 <a href="https://www.npmjs.com/package/html5ify"><img src="https://img.shields.io/npm/l/express.svg?maxAge=2592000"/></a>
 </p>
-HTML5 validator and migration helper which adds `data`-prefix to all custom attributes in html documents and verifies that no obsolete/unsupported attributes is used. Attribute list is based on [W3 attribute reference](http://www.w3schools.com/tags/ref_attributes.asp)
+HTML5 linter and migration helper which adds `data`-prefix to all custom attributes in html documents and verifies that no obsolete/unsupported attributes is used. Attribute list is based on [W3 attribute reference](http://www.w3schools.com/tags/ref_attributes.asp)
 
 ## Installation
 ```
