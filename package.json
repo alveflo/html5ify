@@ -2,7 +2,7 @@
   "name": "html5ify",
   "version": "0.0.2",
   "description": "HTML 5 migration helper. Adds data prefix to all custom attributes.",
-  "main": "html5ify/html5ify.js",
+  "main": "lib/html5ify.js",
   "bin": {
     "html5ify": "index.js"
   },

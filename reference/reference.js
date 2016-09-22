@@ -1,6 +1,5 @@
 var cheerio = require("cheerio");
 var fs = require("fs");
-
 var html = fs.readFileSync("reference.html", "utf8");
 var $ = cheerio.load(html);
 var jsonfile = require('jsonfile');
