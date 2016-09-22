@@ -10,7 +10,8 @@ findAttribute = (attributeList, list, attribute) ->
 
 traverseDom = ($, obj, unsupported) ->
   if obj.hasOwnProperty("children") and obj.children.length > 0
-    [$, unsupported] = traverseDom $, child, unsupported for child in obj.children
+    for child in obj.children
+      [$, unsupported] = traverseDom($, child, unsupported)
 
   if obj.attribs?
     for attr of obj.attribs
