@@ -32,6 +32,7 @@
     "figures": "^1.7.0",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
+    "mkdirp": "^0.5.1",
     "through2": "^2.0.1",
     "underscore": "^1.8.3"
   },

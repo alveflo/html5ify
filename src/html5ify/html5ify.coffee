@@ -24,7 +24,7 @@ module.exports = {
         return "(" + "html5ify".yellow + "): " +
           path.basename(file.path).red.bold +
           " contains unsupported attribute " +
-          result.unsupported[attr].red.bold
+          attr.red.bold
 
       if file.isBuffer()
         try
@@ -32,12 +32,12 @@ module.exports = {
 
           if result.unsupported.length > 0
             if opts.throw
-              for attr of result.unsupported
+              for attr in result.unsupported
                 console.log errorMsg(file, attr.attribute)
               throw path.basename(file.path).red.bold +
                 " contains unsupported attribute(s)."
             else
-              for attr of result.unsupported
+              for attr in result.unsupported
                 console.log "(" + "html5ify".yellow + "): " +
                   "Warning!".red.bold + " " +
                   path.basename(file.path).bold +
