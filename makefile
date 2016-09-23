@@ -8,5 +8,5 @@ init :
 	npm install
 
 build :
-	coffee -o lib/ -c html5ify/
+	coffee -o lib/ -c src/
 	npm test

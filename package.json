@@ -7,7 +7,7 @@
     "html5ify": "index.js"
   },
   "scripts": {
-    "test": "coffeelint -r html5ify/"
+    "test": "coffeelint -r src/"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "coffeelint": "^1.15.7",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
+    "figures": "^1.7.0",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
     "through2": "^2.0.1",
