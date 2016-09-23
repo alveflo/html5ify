@@ -8,5 +8,5 @@ init :
 	npm install
 
 build :
-	coffee -o lib/ -c src/
+	coffee --bare --no-header -o lib/ -c src/ 
 	npm test

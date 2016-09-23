@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+`#!/usr/bin/env node`
 pjson = require "../package.json"
 program = require "commander"
 listPrinter = require "./cli/list.js"
