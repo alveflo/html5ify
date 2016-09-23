@@ -1,13 +1,13 @@
 {
   "name": "html5ify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTML 5 migration helper. Adds data prefix to all custom attributes.",
-  "main": "html5ify/html5ify.js",
+  "main": "lib/html5ify/html5ify.js",
   "bin": {
-    "html5ify": "index.js"
+    "html5ify": "lib/program.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "coffeelint -r src/"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,12 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "cli-table": "^0.3.1",
+    "coffeelint": "^1.15.7",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
-    "gulp": "^3.9.1",
+    "figures": "^1.7.0",
     "gulp-util": "^3.0.7",
+    "mkdirp": "^0.5.1",
     "through2": "^2.0.1",
     "underscore": "^1.8.3"
   },
