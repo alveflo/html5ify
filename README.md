@@ -3,6 +3,7 @@
 <h1 align="center">html5ify</h1>
 </p>
 <p align="center">
+<a href="https://travis-ci.org/alveflo/html5ify"><img src="https://travis-ci.org/alveflo/html5ify.svg?branch=master"/></a>
 <a href="https://www.npmjs.com/package/html5ify"><img src="https://badge.fury.io/js/html5ify.svg"/></a>
 <a href="https://codeclimate.com/github/alveflo/html5ify"><img src="https://codeclimate.com/github/alveflo/html5ify/badges/gpa.svg" /></a>
 <a href="http://packagequality.com/#?package=html5ify"><img src="http://npm.packagequality.com/shield/html5ify.svg"/></a>
