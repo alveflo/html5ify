@@ -7,7 +7,7 @@
     "html5ify": "lib/program.js"
   },
   "scripts": {
-    "test": "coffeelint -r src/"
+    "test": "coffeelint -r src/; jest"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.1",
+    "jest": "^15.1.1",
     "jsonfile": "^2.3.1"
   }
 }
