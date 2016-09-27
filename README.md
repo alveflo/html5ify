@@ -17,18 +17,23 @@ $ (sudo) npm install html5ify --global
 ```
 
 ## CLI
-html5ify ships with a cli application which can be used as a reference to ensure which attributes that's valid for given html tags.
+html5ify ships with a cli application which can be used to compile/lint documents, modify documents and store them into an output folder and also be used
+as a reference to list available attributes for given tags.
 ### Options
 ```
-Usage: html5ify [options]
+  Usage: html5ify [options]
 
-Options:
+  Options:
 
-  -h, --help         output usage information
-  -V, --version      output the version number
-  list <tag>         Get all valid attributes for given <tag>
-  -g, --globals      Get all valid global attributes
-  -u, --unsupported  Get all unsupported attributes in HTML5
+    -h, --help             output usage information
+    -V, --version          output the version number
+    -l, --list <tag>       Get all valid attributes for given <tag>
+    -d, --dir <path>       Specifies directory to process
+    -f, --file <filename>  Specifies file to process
+    -r, --recurse          Reads directory recursively
+    -o, --out <path>       Specifies output directory
+    -g, --globals          Get all valid global attributes
+    -u, --unsupported      Get all unsupported attributes in HTML5
 ```
 ## Gulp
 ### Options
@@ -36,7 +41,7 @@ Options:
 ### Example
 #### gulpfile.js
 ```javascript
-var html5ify = require("html5ify");
+var html5ify = require("html5ify").gulp;
 var gulp = require("gulp");
 
 gulp.task("html5ify", function() {
@@ -44,7 +49,7 @@ gulp.task("html5ify", function() {
     .pipe(html5ify({
       throw: true
     }))
-    .pipe(gulp.dest("./comp"));
+    .pipe(gulp.dest("./dist"));
 });
 ```
 #### Input
@@ -83,7 +88,7 @@ gulp.task("html5ify", function() {
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2016 victor
+Copyright (c) 2016 Victor Alveflo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
